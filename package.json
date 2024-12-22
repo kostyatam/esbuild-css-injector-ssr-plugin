@@ -1,0 +1,24 @@
+{
+  "name": "esbuild-css-injector-ssr-plugin",
+  "version": "0.0.1",
+  "description": "An esbuild plugin that extends CSS and SCSS module support, enabling both scoped class name mappings and server-side CSS injection as React components.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc --project ./tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.24.2",
+    "postcss": "^8.4.49",
+    "postcss-modules": "^6.0.1",
+    "sass": "^1.83.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  }
+}
